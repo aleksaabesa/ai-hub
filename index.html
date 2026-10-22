@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI hub</title>
+</head>
+<body>
+   <h1>ai hub შენი ai ასისტენტი</h1> <img src="download.jpg" alt="">
+   <hr> 
+   <label for="">თქვენი ტელეფონის ნომერი</label>
+   <input type="text"> <button>გამოწერა</button>
+<!-- AI HUB CHAT -->
+<button id="ai-toggle" type="button" aria-controls="ai-chat" aria-expanded="false">🤖 AI Chat</button>
+
+<div id="ai-chat" class="ai-hidden" aria-label="AI Hub Assistant">
+  <div class="ai-header">
+    <span>AI Hub Assistant</span>
+    <button id="ai-close" type="button" aria-label="ჩატის დახურვა">×</button>
+  </div>
+
+  <div id="ai-messages" role="log" aria-live="polite">
+    <div class="ai-bot-message">
+      გამარჯობა! რით შემიძლია დაგეხმარო?
+    </div>
+  </div>
+
+  <form id="ai-form">
+    <input
+      id="ai-input"
+      type="text"
+      placeholder="დაწერე შეკითხვა..."
+      aria-label="შეტყობინება"
+      maxlength="2000"
+      required
+    >
+    <button type="submit">➤</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
